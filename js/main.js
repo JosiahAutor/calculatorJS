@@ -7,3 +7,6 @@ function eq(val){
     let r = eval(i);
     document.getElementById('input').value = `${r}`;
 }
+function cl(){
+    document.getElementById('input').value="";
+}
