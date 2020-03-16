@@ -10,23 +10,24 @@
     <h1>SIMPLE CALCULATOR</h1>
 	<div class="container">
 		<div class="contact">
-				<input type="text" value="" id="input" Name="Input Number">
-				
-				
-
+			<input type="text" value="" id="input" Name="Input Number">
 				<div class="buttons">
 					<div class="upRowBtn">
-						
+						<button id="btnPlus" value="+" onclick="dis('+')">+</button>
+						<button id="btnMinus" value="-" onclick="dis('-')">-</button>
+						<button id="btnMultiply"value="*" onclick="dis('*')">*</button>
+						<button id="btnDivide"value="/" onclick="dis('/')">/</button>
 					</div>
 					<div class="midRowBtn">
-						 
+						<button id="btnSquare" value="^2" onclick="dis('**2')">x²</button>
+						<button id="btnMod"value="&" onclick="dis('%')">%</button>
+						<button id="btnEqual" onclick="eq()">=</button> 
 					</div>
 					<div class="lowRowBtn">
-						
+						<button id="btnClear" value="c" onclick="cl()">C</button>
 					</div>
-				</div>
+			    </div>
 		</div>
 	</div>
-    
 </body>
 </html>
