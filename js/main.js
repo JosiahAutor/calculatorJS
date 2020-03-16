@@ -10,3 +10,10 @@ function eq(val){
 function cl(){
     document.getElementById('input').value="";
 }
+
+var keypress = document.getElementById('input');
+keypress.addEventListener('input', restrictToNumbers);
+function restrictToNumbers () {  
+  var newValue = this.value.replace(new RegExp(/[^\d\+\-\/\*\%\=]/), "");
+  this.value = newValue;
+}
